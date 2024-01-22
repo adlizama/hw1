@@ -12,7 +12,7 @@ CREATE TABLE movies(
 CREATE TABLE actor_history(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     actor TEXT,
-    movie_title TEXT,
+    movie_id TEXT,
     character TEXT
 );
 
