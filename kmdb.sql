@@ -16,6 +16,16 @@ CREATE TABLE actor_history(
     character TEXT
 );
 
+INSERT INTO movies (movie_title, year_released,mpaa_rating,studio)
+VALUES ('Batman Begins', 2005, "PG-13", "Warner Brothers");
+
+INSERT INTO movies (movie_title, year_released,mpaa_rating,studio)
+VALUES ('The Dark Knight', 2008, "PG-13", "Warner Brothers");
+
+INSERT INTO movies (movie_title, year_released,mpaa_rating,studio)
+VALUES ('The Dark Knight Rises', 2012, "PG-13", "Warner Brothers");
+
+SELECT * FROM movies;
 
 -- In this assignment, you'll be building the domain model, database 
 -- structure, and data for "KMDB" (the Kellogg Movie Database).
