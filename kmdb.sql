@@ -75,7 +75,7 @@ VALUES ('The Dark Knight Rises', 'Joseph Gordon-Levitt', "John Blake");
 INSERT INTO actor_history(movie_id,actor,character)
 VALUES ('The Dark Knight Rises', 'Anne Hathaway', "Selina Kyle");
 
-SELECT * FROM actor_history;
+
 
 -- In this assignment, you'll be building the domain model, database 
 -- structure, and data for "KMDB" (the Kellogg Movie Database).
@@ -196,7 +196,7 @@ SELECT * FROM actor_history;
 .print "Movies"
 .print "======"
 .print ""
-
+SELECT movie_title, year_released, mpaa_rating, studio FROM movies;
 -- The SQL statement for the movies output
 -- TODO!
 
@@ -206,6 +206,7 @@ SELECT * FROM actor_history;
 .print "========"
 .print ""
 
+SELECT movie_id, actor, character FROM actor_history;
 
 -- The SQL statement for the cast output
 -- TODO!
