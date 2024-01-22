@@ -1,3 +1,5 @@
+-- Creates Domain Map
+
 DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS actor_history;
 
@@ -11,11 +13,12 @@ CREATE TABLE movies(
 
 CREATE TABLE actor_history(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    actor TEXT,
     movie_id TEXT,
+    actor TEXT,
     character TEXT
 );
 
+-- Inserts into the movies table
 INSERT INTO movies (movie_title, year_released,mpaa_rating,studio)
 VALUES ('Batman Begins', 2005, "PG-13", "Warner Brothers");
 
@@ -25,7 +28,24 @@ VALUES ('The Dark Knight', 2008, "PG-13", "Warner Brothers");
 INSERT INTO movies (movie_title, year_released,mpaa_rating,studio)
 VALUES ('The Dark Knight Rises', 2012, "PG-13", "Warner Brothers");
 
-SELECT * FROM movies;
+-- Inserts into the actor_history table
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('Batman Begins', 'Christian Bale', 'Bruce Wayne');
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('Batman Begins', 'Michael Caine', 'Alfred');
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('Batman Begins', 'Liam Neeson', "Ra's Al Ghul");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('Batman Begins', 'Katie Holmes', "Rachel Dawes");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('Batman Begins', 'Gary Oldman', "Commissioner Gordon");
+
+SELECT * FROM actor_history;
 
 -- In this assignment, you'll be building the domain model, database 
 -- structure, and data for "KMDB" (the Kellogg Movie Database).
