@@ -45,6 +45,36 @@ VALUES ('Batman Begins', 'Katie Holmes', "Rachel Dawes");
 INSERT INTO actor_history(movie_id,actor,character)
 VALUES ('Batman Begins', 'Gary Oldman', "Commissioner Gordon");
 
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight', 'Christian Bale', "Bruce Wayne");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight', 'Heath Ledger', "Joker");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight', 'Aaron Eckhart', "Harvey Dent");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight', 'Michael Caine', "Alfred");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight', 'Maggie Gyllenhaal', "Rachel Dawes");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight Rises', 'Christian Bale', "Bruce Wayne");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight Rises', 'Gary Oldman', "Commissioner Gordon");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight Rises', 'Tom Hardy', "Bane");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight Rises', 'Joseph Gordon-Levitt', "John Blake");
+
+INSERT INTO actor_history(movie_id,actor,character)
+VALUES ('The Dark Knight Rises', 'Anne Hathaway', "Selina Kyle");
+
 SELECT * FROM actor_history;
 
 -- In this assignment, you'll be building the domain model, database 
