@@ -1,3 +1,22 @@
+DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS actor_history;
+
+CREATE TABLE movies(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    movie_title TEXT,
+    year_released INTEGER,
+    mpaa_rating TEXT,
+    studio TEXT
+);
+
+CREATE TABLE actor_history(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    actor TEXT,
+    movie_title TEXT,
+    character TEXT
+);
+
+
 -- In this assignment, you'll be building the domain model, database 
 -- structure, and data for "KMDB" (the Kellogg Movie Database).
 -- The end product will be a report that prints the movies and the 
